@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownie</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- scripts -->
+    <script defer src="./script/navMobile.js"></script>
+    <script defer src="./script/heroContentChanger.js"></script>
+    <script defer src="./script/cardInjector.js"></script>
+    <script defer src="./script/newsContentChanger.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav">
+            <div class="nav__logo">
+                    <svg class="nav__logo--txt" width="183" height="28" viewBox="0 0 183 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M31.653 4.53887L25.1949 24.28H20.2878L15.9448 10.9124L11.4607 24.28H6.58183L0.095459 4.53887H4.83333L9.28918 18.4141L13.9424 4.53887H18.1727L22.6849 18.5269L27.2818 4.53887H31.653Z"
+                            fill="white" />
+                        <path
+                            d="M46.5435 20.0497H37.378L35.6295 24.28H30.948L39.7469 4.53887H44.2592L53.0863 24.28H48.292L46.5435 20.0497ZM45.1052 16.5809L41.9748 9.02292L38.8444 16.5809H45.1052Z"
+                            fill="white" />
+                        <path d="M58.2322 8.26148H51.915V4.53887H69.118V8.26148H62.8008V24.28H58.2322V8.26148Z"
+                            fill="white" />
+                        <path
+                            d="M80.7483 24.6184C78.7366 24.6184 76.9129 24.186 75.2772 23.3211C73.6603 22.4375 72.3818 21.2248 71.4417 19.6831C70.5205 18.1226 70.0599 16.3647 70.0599 14.4094C70.0599 12.4541 70.5205 10.7056 71.4417 9.16393C72.3818 7.60344 73.6603 6.39077 75.2772 5.52592C76.9129 4.64227 78.746 4.20045 80.7765 4.20045C82.4874 4.20045 84.0291 4.50127 85.4015 5.1029C86.7928 5.70453 87.9585 6.56938 88.8985 7.69745L85.9656 10.4048C84.6307 8.86311 82.9762 8.09227 81.0021 8.09227C79.78 8.09227 78.6896 8.36488 77.7307 8.91011C76.7718 9.43654 76.0198 10.1792 75.4746 11.138C74.9481 12.0969 74.6849 13.1874 74.6849 14.4094C74.6849 15.6315 74.9481 16.722 75.4746 17.6808C76.0198 18.6397 76.7718 19.3917 77.7307 19.9369C78.6896 20.4634 79.78 20.7266 81.0021 20.7266C82.9762 20.7266 84.6307 19.9463 85.9656 18.3858L88.8985 21.0932C87.9585 22.2401 86.7928 23.1143 85.4015 23.716C84.0103 24.3176 82.4592 24.6184 80.7483 24.6184Z"
+                            fill="white" />
+                        <path
+                            d="M110.089 4.53887V24.28H105.521V16.1861H96.5524V24.28H91.9837V4.53887H96.5524V12.3225H105.521V4.53887H110.089Z"
+                            fill="white" />
+                        <path d="M120.795 0.534241H124.715L115.408 27.1001H111.488L120.795 0.534241Z" fill="white" />
+                        <path d="M125.804 4.53887H130.372V20.5574H140.271V24.28H125.804V4.53887Z" fill="white" />
+                        <path
+                            d="M155.99 20.0497H146.824L145.076 24.28H140.394L149.193 4.53887H153.706L162.533 24.28H157.738L155.99 20.0497ZM154.552 16.5809L151.421 9.02292L148.291 16.5809H154.552Z"
+                            fill="white" />
+                        <path
+                            d="M179.076 14.0146C180.204 14.3718 181.088 14.9735 181.727 15.8195C182.367 16.6468 182.686 17.6714 182.686 18.8935C182.686 20.6232 182.009 21.958 180.656 22.8981C179.321 23.8194 177.366 24.28 174.79 24.28H164.581V4.53887H174.226C176.632 4.53887 178.475 4.99949 179.753 5.92075C181.051 6.842 181.699 8.09227 181.699 9.67156C181.699 10.6304 181.464 11.4859 180.994 12.2379C180.543 12.9899 179.904 13.5822 179.076 14.0146ZM169.121 7.97946V12.6327H173.662C174.79 12.6327 175.645 12.4353 176.228 12.0405C176.811 11.6457 177.102 11.0628 177.102 10.292C177.102 9.52115 176.811 8.94772 176.228 8.57169C175.645 8.17687 174.79 7.97946 173.662 7.97946H169.121ZM174.451 20.8394C175.655 20.8394 176.557 20.642 177.159 20.2472C177.779 19.8523 178.089 19.2413 178.089 18.4141C178.089 16.7784 176.877 15.9605 174.451 15.9605H169.121V20.8394H174.451Z"
+                            fill="white" />
+                    </svg>
+            </div>
+
+            <div class="nav__menu">
+                <div class="nav__menu--hamburger">
+                    <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.595459 1.25415H26.5955" stroke="white" />
+                        <path d="M0.595459 9.81714H26.5955" stroke="white" />
+                        <path d="M0.595459 18.3802H26.5955" stroke="white" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav__mobile">
+            <li class="listItem searchBarItem">
+                <div class="searchBar">
+                    <input type="text" name="searchBar" id="mobileSearchBar">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 18.5622L14.7707 14.333M17.3082 8.75047C17.3082 13.2351 13.6728 16.8705 9.18818 16.8705C4.70359 16.8705 1.06812 13.2351 1.06812 8.75047C1.06812 4.26588 4.70359 0.630402 9.18818 0.630402C13.6728 0.630402 17.3082 4.26588 17.3082 8.75047Z"
+                            stroke="black" />
+                    </svg>
+                </div>
+            </li>
+            <li class="listItem">
+                <a class="listItem__link" href="">about us</a>
+            </li>
+            <li class="listItem">
+                <a class="listItem__link" href="">brand</a>
+            </li>
+            <li class="listItem">
+                <a class="listItem__link" href="">rojects</a>
+            </li>
+            <li class="listItem">
+                <a class="listItem__link" href="">agazine</a>
+            </li>
+            <li class="listItem">
+                <a class="listItem__link" href="">press</a>
+            </li>
+            <li class="listItem">
+                <a class="listItem__link" href="">contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content--text">
+                <h4 class="heroHeader">LONDON COLLECTION SEASON</h4>
+                <h2 class="heroTitle">New Selection Of
+                    Henry London</h2>
+                <p class="heroFooter">An estimable experience in the modern collection house</p>
+            </div>
+            <div class="hero__content--btn">
+                <a class="heroLink" href="">Discover</a>
+            </div>
+        </div>
+
+        <button class="hero__nextButton">
+            <img src="./assets/image/mobileBgHero2.png" alt="" class="hero__nextButton--bg">
+            <h2 class="hero__nextButton--title">The Path to Success <br>
+                with  Watchlab</h2>
+            <div class="nxtArrowWrapper">
+                <div class="hero__nextButton--txt">
+                    Next
+                </div>
+                <div class="hero__nextButton--arrow">
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.01831 0.475952L10 4.51776L1.01831 7.66135" stroke="white" />
+                    </svg>
+                    <div class="activeOnHover">
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.01831 0.475952L10 4.51776L1.01831 7.66135" stroke="white" />
+                        </svg>
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.01831 0.475952L10 4.51776L1.01831 7.66135" stroke="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </button>
+    </section>
+
+    <!-- history section -->
+    <section class="history">
+        <div class="history__heading">
+            <h2 class="history__heading--title">History and
+                Patriarcal season </h2>
+        </div>
+        <div class="history__body">
+            <p class="history__body--paragraph">On the other hand, we denounce with righteousindignation and dislike men
+                who are so beguiled anddemoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+            <p class="history__body--paragraph">But I must explain to you how all this mistaken idea of denouncing
+                pleasure and praising pain was born and I will give you a complete account of the system, and expound
+                the actual teachings of the great explorer of the truth, the master-builder of human happiness. No that
+                are
+                extremely painful</p>
+        </div>
+    </section>
+
+    <!-- collection cards -->
+    <section class="collection">
+        <!-- the cards are injected here -->
+    </section>
+
+    <!-- news section -->
+    <section class="news">
+        <div class="news__introduction">
+            <h2 class="news__introduction--title">
+                Press from <br>
+                Watch Lab Studio
+            </h2>
+            <p class="news__introduction--paragraph">
+                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain trouble
+            </p>
+        </div>
+        <div class="news__card">
+            <div class="news__card--thumbnail">
+                <img id="newsImg" src="./assets/image/newsImg1.png" alt="black and white photo of a man">
+            </div>
+            <div class="news__card--body">
+                <h4 class="author" id="newsAuthor">Press</h4>
+                <h4 class="date" id="newsDate">18 SETTEMBRE 2022</h4>
+                <h2 class="title" id="newsTitle">Most Important <br>
+                    Days on Watchlab</h2>
+                <div class="arrow">
+                    <div class="arrow__right" id="newsRightArrow">
+                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.68793 0.609375L0.718811 7.57861L7.68793 14.5477" stroke="black" />
+                        </svg>
+                    </div>
+                    <div class="arrow__left" id="newsLeftArrow">
+                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.687927 0.609375L7.65704 7.57861L0.687927 14.5477" stroke="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- discover section -->
+    <section class="discoverWrapper">
+        <div class="discoverWrapper__cover">
+            <h4 class="discoverWrapper__cover--preTitle">
+                INSTAGRAM
+            </h4>
+            <h2 class="discoverWrapper__cover--title">Discover
+                Watch Lab</h2>
+        </div>
+        <div class="discoverWrapper__collage">
+            <div class="discoverWrapper__collage--img">
+                <img class="img1" src="./assets/image/collageImg1.png" alt="bus image">
+            </div>
+            <div class="discoverWrapper__collage--img">
+                <img class="img1" src="./assets/image/collageImg2.png" alt="watch image">
+            </div>
+            <div class="discoverWrapper__collage--img">
+                <img class="img1" src="./assets/image/collageImg3.png" alt="watch image">
+            </div>
+            <div class="discoverWrapper__collage--img">
+                <img class="img1" src="./assets/image/collageImg4.png" alt="watch image">
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+        <div class="contact__heading">
+            <h2 class="contact__heading--title">
+                Get in Touch
+            </h2>
+            <h4 class="contact__heading--subTitle">
+                discover more about news,<br> exclusive events and discount
+            </h4>
+        </div>
+        <form action="submit" class="contact__form">
+            <input class="contact__form--emailInput" type="email" name="email" id="emailInput"
+                placeholder="Type your email">
+            <button class="contact__form--btn">
+                ok
+            </button>
+
+        </form>
+    </section>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer__head">
+            <div class="footer__head--title">
+                <svg width="183" height="27" viewBox="0 0 183 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.9741 4.42597L25.5389 24.097H20.6492L16.3216 10.7769L11.8534 24.097H6.99187L0.528511 4.42597H5.24957L9.68961 18.2519L14.3264 4.42597H18.5416L23.0378 18.3643L27.6184 4.42597H31.9741Z"
+                        fill="white" />
+                    <path
+                        d="M46.8117 19.8818H37.6787L35.9365 24.097H31.2716L40.0393 4.42597H44.5355L53.3313 24.097H48.554L46.8117 19.8818ZM45.3786 16.4253L42.2593 8.89411L39.14 16.4253H45.3786Z"
+                        fill="white" />
+                    <path d="M58.459 8.13537H52.1642V4.42597H69.3061V8.13537H63.0114V24.097H58.459V8.13537Z"
+                        fill="white" />
+                    <path
+                        d="M80.8952 24.4343C78.8906 24.4343 77.0734 24.0034 75.4435 23.1416C73.8323 22.2611 72.5584 21.0527 71.6217 19.5165C70.7037 17.9615 70.2447 16.2099 70.2447 14.2615C70.2447 12.3131 70.7037 10.5708 71.6217 9.03462C72.5584 7.47967 73.8323 6.2713 75.4435 5.40952C77.0734 4.52901 78.9 4.08875 80.9233 4.08875C82.6281 4.08875 84.1643 4.3885 85.5319 4.988C86.9183 5.5875 88.0798 6.44928 89.0165 7.57334L86.094 10.2711C84.7638 8.73487 83.1152 7.96676 81.1481 7.96676C79.9304 7.96676 78.8438 8.23841 77.8883 8.78171C76.9329 9.30627 76.1835 10.0463 75.6402 11.0017C75.1156 11.9572 74.8533 13.0438 74.8533 14.2615C74.8533 15.4792 75.1156 16.5658 75.6402 17.5213C76.1835 18.4767 76.9329 19.2261 77.8883 19.7694C78.8438 20.294 79.9304 20.5562 81.1481 20.5562C83.1152 20.5562 84.7638 19.7788 86.094 18.2238L89.0165 20.9216C88.0798 22.0644 86.9183 22.9355 85.5319 23.535C84.1456 24.1345 82.6 24.4343 80.8952 24.4343Z"
+                        fill="white" />
+                    <path
+                        d="M110.132 4.42597V24.097H105.58V16.0319H96.6432V24.097H92.0908V4.42597H96.6432V12.182H105.58V4.42597H110.132Z"
+                        fill="white" />
+                    <path d="M120.8 0.435547H124.706L115.432 26.9072H111.526L120.8 0.435547Z" fill="white" />
+                    <path d="M125.791 4.42597H130.343V20.3876H140.207V24.097H125.791V4.42597Z" fill="white" />
+                    <path
+                        d="M155.87 19.8818H146.737L144.995 24.097H140.33L149.097 4.42597H153.594L162.389 24.097H157.612L155.87 19.8818ZM154.437 16.4253L151.317 8.89411L148.198 16.4253H154.437Z"
+                        fill="white" />
+                    <path
+                        d="M178.874 13.8681C179.999 14.224 180.879 14.8235 181.516 15.6666C182.153 16.4909 182.471 17.5119 182.471 18.7296C182.471 20.4532 181.797 21.7833 180.448 22.7201C179.118 23.6381 177.17 24.097 174.603 24.097H164.43V4.42597H174.041C176.439 4.42597 178.275 4.88496 179.549 5.80294C180.842 6.72093 181.488 7.96676 181.488 9.54045C181.488 10.4959 181.254 11.3483 180.785 12.0977C180.336 12.8471 179.699 13.4372 178.874 13.8681ZM168.955 7.85435V12.4911H173.479C174.603 12.4911 175.455 12.2944 176.036 11.901C176.617 11.5076 176.907 10.9268 176.907 10.1587C176.907 9.39057 176.617 8.81917 176.036 8.44449C175.455 8.05106 174.603 7.85435 173.479 7.85435H168.955ZM174.266 20.6687C175.465 20.6687 176.364 20.4719 176.964 20.0785C177.582 19.6851 177.891 19.0762 177.891 18.2519C177.891 16.622 176.683 15.8071 174.266 15.8071H168.955V20.6687H174.266Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="footerContent">
+            <ul class="footer__address">
+                <li class="footer__address--text">
+                    Watch/Lab - Innovation brings success
+                </li>
+                <li class="footer__address--text">
+                    Via Borgogna 5, Milan
+                </li>
+                <li class="footer__address--text">
+                    Italy
+                </li>
+            </ul>
+            <ul class="footer__menu">
+                <li class="footer__menu--link">
+                    <a href="">About us</a>
+                </li>
+                <li class="footer__menu--link">
+                    <a href="">Press</a>
+                </li>
+                <li class="footer__menu--link">
+                    <a href="">Brand</a>
+                </li>
+                <li class="footer__menu--link">
+                    <a href="">Contacts</a>
+                </li>
+                <li class="footer__menu--link">
+                    <a href="">Projects</a>
+                </li>
+                <li class="footer__menu--link">
+                    <a href="">Privacy policy</a>
+                </li>
+                <li class="footer__menu--link">
+                    <a href="">magazine</a>
+                </li>
+                <li class="footer__menu--link">
+                    <a href="">search</a>
+                </li>
+            </ul>
+            <ul class="footer__info">
+                <li class="footer__info--title">
+                    Watch/Lab - Innovation brings success
+                </li>
+                <li class="footer__info--address">
+                    Via Borgogna 5, Milan Italy
+                </li>
+                <li class="footer__info--number">
+                    T. +39 392 9133937
+                </li>
+                <li class="footer__info--email">
+                    M. info@watch-lab.it
+                </li>
+                <li class="footer__info--social">
+                    <a href="">FACEBOOK</a>
+                </li>
+                <li class="footer__info--social">
+                    <a href="">INSTAGRAM</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="copyrightWrapper">
+        <p class="copyrightWrapper__text">Copyright Watch/Lab all rights reserved</p>
+        <p class="copyrightWrapper__text">website by nssfactory</p>
+    </div>
+</body>
+
+</html>
